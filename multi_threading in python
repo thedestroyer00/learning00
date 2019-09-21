@@ -26,6 +26,6 @@ sleep(0.3)
 b.run()
 
 w.join()
-b.join(0
+b.join()
 
 print("As a whole - The world is beautiful")
