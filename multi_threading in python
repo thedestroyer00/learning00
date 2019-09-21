@@ -24,3 +24,8 @@ b = beauty()
 w.run()
 sleep(0.3)
 b.run()
+
+w.join()
+b.join(0
+
+print("As a whole - The world is beautiful")
