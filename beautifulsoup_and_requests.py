@@ -6,10 +6,11 @@ response = requests.get(url).text
 
 soup = BeautifulSoup(response, 'lxml')
 
-article = soup.find('article')
+articles = soup.find_all('article')
 
-link = article.find(class_ = 'entry-title-link')['href']
+for article in articles:
+	link = article.find(class_ = 'entry-title-link')['href']
 
-print(link)
+	print(link)
 
 
