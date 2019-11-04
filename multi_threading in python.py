@@ -1,31 +1,18 @@
-#Mulit threating in python
+# multi-threading in python 
 
-from threading improt Thread
-from time import sleep 
+import concurrent.futures
+import time 
 
+def thread(sec):
+	print(f'{sec}The world is beautiful!')
+	time.sleep(sec)
+	return f'{sec}The world is still beautiful!'
 
-class world(Thread):
-	def run(self):
-		for i in range(5):
-			print("The world")
-			sleep(1)
-			
-			
-			
-class beauty(Thread):
-	def run(self):
-		print("is beautiful")
-		sleep(1)
-		
-		
-w = world()
-b = beauty()
-
-w.run()
-sleep(0.3)
-b.run()
-
-w.join()
-b.join()
-
-print("As a whole - The world is beautiful")
+with concurrent.futures.ThreadPoolExecutor() as executor:
+	secs = [10, 9, 8, 7, 6, 5, 4, 3, 2, 1]
+	t = [executor.submit(thread, sec) for sec in secs]
+	for i in concurrent.futures.as_completed(t):
+		 print(i.result())
+	 
+	
+	
