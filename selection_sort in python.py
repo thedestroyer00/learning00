@@ -5,7 +5,7 @@ def sort(list,n):
 
     for i in range(n):
         min_position = i
-        for j in range(i, n + 1):
+        for j in range(i, n):
             if list[j] < list[min_position]:
                 min_position = j
 
@@ -15,7 +15,7 @@ def sort(list,n):
 
 
 nums = [5, 4, 6, 3, 8, 7, 9, 1, 2]
-n = len(nums) - 1
+n = len(nums) 
 sort(nums, n)
 
 print(nums)
