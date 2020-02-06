@@ -1,4 +1,4 @@
-# Creating and updating a linked list in python 
+# Creating a linklist and UPdating and updating it
 class Node:
     def __init__(self, element = None):
         self.element = element
@@ -35,29 +35,18 @@ class Linklist:
                     
         if check == 0:
             print("The entered element doesn't exists in the linked list...")
-            
-        
-                
+                   
     def insert_element(self,position, new_element):
-		# to insert an element in this linked list the method should be called as 
-		# linklist.insert_element(position[ie: 'h' of head and 'l' for last], Node(element)) 
-		
         self.position = position
-        insert_new = self.headelement
+        last_element = self.headelement
         if self.position == 'h':
             self.headelement = new_element
-            self.headelement.nextelement = insert_new
+            self.headelement.nextelement = last_element
         if position == 'l':
-            while(True):
-                if insert_new is None:
-                    insert_new = new_element
-                    return
-                    break
-                else:
-                    insert_new = insert_new.nextelement
-            
-        
-                
+            while(last_element.nextelement):
+                last_element = last_element.nextelement
+            last_element.nextelement = new_element
+                          
 linklist = Linklist()
 linklist.headelement = Node(5)
 
@@ -78,6 +67,6 @@ e6.nextelement = e7
 e7.nextelement = e8
 
 linklist.printlist()
-linklist.insert_element('l',Node(0))
+linklist.insert_element('l',Node(45))
 print()
 linklist.printlist()
