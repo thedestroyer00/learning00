@@ -1,25 +1,27 @@
-# Trying to create a linked list but this code doesn't works
-
 class Node:
-	def __init__(self, data= None):
+	def __init__(self, data = None):
 		self.data = data
 		self.next = None
 
 
-class LinkedList:
+class LinkeList:
 	def __init__(self):
-		self.head =None
+		self.head = None
 
-	def push(self, newdata):
-		value = self.head
+	def push(self,newdata):
 		NewNode = Node(newdata)
-		if value is None:
+		if self.head is None:
 			self.head = NewNode
-		else:
-			while value is not None:
-				value = value.next
-			value = NewNode
+			self.head.next = None
+			return 
 
+		else:
+			last = self.head 
+			while last is not None:
+				prev = last
+				last = last.next
+			prev.next = NewNode
+			
 	def printlist(self):
 		printvalue = self.head
 		while printvalue is not None:
@@ -27,8 +29,8 @@ class LinkedList:
 			printvalue = printvalue.next
 
 
-l = LinkedList()
-l.push(5)
-l.push(6)
-l.push(7)
+l = LinkeList()
+l.push(1)
+l.push(2)
+l.push(3)
 l.printlist()
