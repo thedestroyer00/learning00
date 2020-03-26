@@ -1,4 +1,4 @@
-# BuzzBuddy(quiz) automation using python selenium: 
+# BuzzBuddy(quiz) automation using python selenium : 
 
 import random
 import string
@@ -36,7 +36,12 @@ start.click()
 answers = browser.find_elements_by_css_selector('div.card.options.option.option-ans.correct')
 
 for i in answers:
-    sleep(5)
+    sleep(3)
     i.click()
-    
-print('Automation is a success')
+
+sleep(11)
+print('\n\nAutomation is a success')
+score = browser.find_element_by_id('congo')
+print('your score is ',score.text)
+
+browser.quit()
