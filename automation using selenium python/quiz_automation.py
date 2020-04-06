@@ -36,12 +36,18 @@ start.click()
 answers = browser.find_elements_by_css_selector('div.card.options.option.option-ans.correct')
 
 for i in answers:
-    sleep(3)
+    sleep(1)
     i.click()
 
-sleep(11)
+sleep(3)
+
+button = browser.find_element_by_css_selector('button.btn.btn-green')
+button.click()
+
 print('\n\nAutomation is a success')
+print('Your name is : ' + name)
 score = browser.find_element_by_id('congo')
 print('your score is ',score.text)
 
 browser.quit()
+
