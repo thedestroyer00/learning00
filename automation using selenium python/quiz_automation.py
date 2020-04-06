@@ -36,7 +36,7 @@ start.click()
 answers = browser.find_elements_by_css_selector('div.card.options.option.option-ans.correct')
 
 for i in answers:
-    sleep(1)
+    sleep(2)
     i.click()
 
 sleep(3)
