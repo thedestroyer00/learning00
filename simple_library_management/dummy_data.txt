@@ -1,0 +1,19 @@
+This is the dummy data collection for library management.
+
+# students_infos = [('Jackson Coffee', 'Bsc CS', 3),('Jhonson Tea', 'Bsc Physics', 2),('Ellen Talker', 'Bsc Maths', 7),
+# ('Rakesh Rana', 'Bsc Chemistry', 1),('Ruby Red', 'Bsc Biology', 2),('Scralet Charl', 'Msc Physics', 4),
+# ('Charl Jonshon', 'Bsc CS', 8),('Allen Walker', 'Msc Maths', 1),('Hari Robert', 'Bsc CS', 7),
+# ('Xin Jin', 'Bsc Chemistry', 1),('Chau Li ', 'Msc CS', 2),('Kagamaya Tobio', 'Bsc Biology', 5),
+# ('Akashi Rujaki', 'Msc Physics', 3),('Cake Pitterson', 'Bsc Chemistry', 5),('Barni Bird', 'Msc Physics', 2)]
+
+
+# books_infos = [(101, 'Fundamental of C Programming', 'Dennis Ritchie', 50),(102, 'Physics', 'Isaac Newton', 50),(103, 'Organic Chemistry', 'Friedrich Wohler', 30),(104, 'The selfish Gene', 'Richard Dawkins', 20),
+# (105, 'Data Mining', 'Jiawei Han', 25),(106, 'Physics Numerical 2nd Edition', 'Albert Einstein', 50),(107, 'Physical Chemistry', 'Wilhelm Ostwald', 40),
+# (108, 'Object Oriented Programming in Java', 'Alan Kay', 30),(109, 'On the Origin of species', 'Charles Darwin', 15),(110, 'Working with DBMS', 'Charles Babbage', 10),
+# (111,'Calculus 1','Isaac Newton', 20),(112,'Calculus 2','Isaac Newton', 20),(113,'Calculus 3','Isaac Newton', 25),(114,'How to Lie with Statistics','Darrell Huff', 40),
+# (115,'The Elements of  Statistical Learning','Trevor Hastie', 25),(116,'Discrete mathematics with applications','Susanna S. Epp', 50)]
+
+# transactions_infos = [(1,101),(1,110),(2,102),(2,111),(3,111),(3,114),
+# (4,103),(5,109),(5,103),(6,112),(6,106),(7,105),(7,116),(8,116),
+# (8,115),(9,114),(9,108),(10,107),(10,103),(11,110),(12,109),(12,107),
+# (13,102),(14,107),(15,102),(15,103)]
