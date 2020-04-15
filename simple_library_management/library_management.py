@@ -3,7 +3,7 @@ import mysql.connector
 class Library:
 
 	def __init__(self):
-		self.db = mysql.connector.connect(host='localhost', user='nischal', passwd='nischal12345')
+		self.db = mysql.connector.connect(host='localhost', user='username', passwd='password')
 		self.dbcursor = self.db.cursor()
 		
 		# self.dbcursor.execute("drop database library;")
