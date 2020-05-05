@@ -178,7 +178,7 @@ class Show_records:
         self.library = Library()
         
     def show_student_record(self):
-        choices = ['all','id', 'class', 'name', 'semester', 'address']
+        choices = ('all','id', 'class', 'name', 'semester', 'address')
         print("Find student By: " + ', '.join(choices))
         c = input("enter filter method : ").strip().lower()
         if c in choices :
@@ -201,7 +201,7 @@ class Show_records:
     
     
     def show_book_record(self):
-        choices = ['all', 'id', 'name', 'author']
+        choices = ('all', 'id', 'name', 'author')
         print("Find book By: " + ', '.join(choices))
         c = input("enter filter method : ").strip().lower()
         if c in choices:
@@ -225,7 +225,7 @@ class Show_records:
     
     
     def show_transaction(self):
-        choices = ['all', 'student', 'book']
+        choices = ('all', 'student', 'book')
         print("Find book By: " + ', '.join(choices))
         c = input("enter filter method : ").strip().lower()
         if c in choices:
@@ -293,4 +293,5 @@ def outlook():
     
 
 outlook()
+ 
         
