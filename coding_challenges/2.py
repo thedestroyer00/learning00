@@ -7,17 +7,16 @@
 
 #Solution: 
 import copy
+from functools import reduce 
 def findprod(nums):
 	prod = []
 	for i in nums:
 		dumlist = copy.deepcopy(nums)
 		dumlist.remove(i)
-		p = 1
-		for j in dumlist:
-			p*=j
+		p = reduce((lambda x,y: x*y), dumlist)
 		prod.append(p)
 	print(prod)
 
 
-nums = [3,2,1]
+nums = [1, 2, 3, 4, 5]
 findprod(nums)
